@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <div id="page-container">
     <div class="main-section">
@@ -10,10 +8,13 @@
           <div class="phone">
             <div class="speaker"></div>
             <div class="chat-header">
-              <div class="back"></div>
+              <div class="chat-back"></div>
+              <div class="person-image">
+                <img src="./assets/avatar.jpg" alt="avatar" />
+              </div>
               <div class="person-info">
-                <div class="person-name"></div>
-                <div class="person-status"></div>
+                <div class="person-name">Samuel Green</div>
+                <div class="person-status">Available to Walk</div>
               </div>
               <div class="chat-settings">
                 <div class="dot"></div>
@@ -59,9 +60,16 @@
               </div>
             </div>
             <div class="chat-input">
-              <form>
-                <input type="text" name="message" id="message" />
-                <button type="submit"></button>
+              <form action="javascript:void(0);">
+                <input
+                  type="text"
+                  name="message"
+                  id="message"
+                  placeholder="Type a message..."
+                />
+                <button id="submit" type="submit">
+                  <div class="arrow"></div>
+                </button>
               </form>
             </div>
           </div>
@@ -79,5 +87,3 @@
     </div>
   </div>
 </template>
-
-<style scoped></style>
